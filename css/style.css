@@ -1,0 +1,299 @@
+/* <===== Basic CSS =====> */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'kalpurush';
+    src: url(../fonts/kalpurush.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kalpurush';
+}
+
+img {
+    max-width: 100%;
+}
+
+.en {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.social_area {
+    background-color: #41b1d6;
+    padding: 8px 0;
+}
+
+.social_area .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_area ul {
+    list-style-type: none;
+}
+
+.social_area ul li {
+    display: inline-block;
+}
+
+.social_area ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.social_area .icon_area a {
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    background-color: #333;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.social_area .icon_area a:hover {
+    background-color: #89CFFD;
+    color: #000;
+}
+
+.social_area .login_panel li {
+    color: #fff;
+}
+
+.social_area .login_panel li i {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social_area .login_panel a {
+    margin-left: 10px;
+}
+
+.social_area .login_panel a:hover {
+    text-decoration: underline;
+}
+
+.logo_search_area {
+    padding: 30px 0;
+    /* background-color: #E3F8FF; */
+}
+
+.logo_search_area .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_area img {
+    height: 80px;
+}
+
+.logo_search_area form input {
+    padding: 5px;
+    border-color: #41b1d6;
+    border-radius: 50px;
+    border-outline: none;
+}
+
+.nav_area {
+    margin-bottom: 30px;
+}
+
+.nav_area ul {
+    list-style-type: none;
+    background-color: #405983;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* .nav_area ul li {
+    display: inline-block;
+} */
+
+.nav_area ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.nav_area ul li:hover a {
+    background-color: #FF4A4A;
+}
+
+.nav_area ul li a.active {
+    background-color: #31BCCC;
+}
+
+.slide_show {
+    margin-bottom: 30px;
+}
+
+.slide_show img {
+    border: 1px solid #eee;
+    width: 100%;
+    /* height: 360px; */
+    display: block;
+    border-radius: 10px;
+}
+
+.notice_area .container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}
+
+.notice_area .container .notice_icon {
+    font-size: 26px;
+    color: #FF4A4A;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.notice_area .container p {
+    padding-left: 15px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.about_section .specialty ul {
+    list-style-position: inside;
+}
+
+.about_section .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.about_section .container>div {
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.about_section .container h2 {
+    color: #FF4A4A;
+    border-bottom: 5px solid #31BCCC;
+}
+
+.about_section .container p,
+.about_section .container ul {
+    margin-top: 20px;
+}
+
+.about_section .container .name_designation {
+    text-align: right;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.about_section .container .name_designation .designation {
+    color: rgb(90, 90, 90);
+    font-size: 12px;
+}
+
+/* .about_section .container p::first-letter {
+    font-size: 150%;
+} */
+
+footer {
+    background-color: rgb(34, 34, 34);
+    margin-top: 30px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .container p {
+    color: #fff;
+}
+
+footer a {
+    color: #FF4A4A;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* Result Page CSS */
+.result_panel ul {
+    list-style-type: none;
+}
+
+.result_panel form {
+    font-size: 18px;
+    background-color: #fbfbfb;
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.result_panel form ul li label {
+    font-weight: 500;
+    width: 40%;
+    display: inline-block;
+}
+
+.result_panel form ul li input,
+.result_panel form ul li select {
+    font-size: 17px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    width: 59%;
+}
+
+.result_panel form ul li input:focus {
+    outline: none;
+}
+
+.result_panel form ul li.button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.result_panel form ul li.button input {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.result_panel form ul li.button input[type="submit"] {
+    width: 125px;
+    margin-left: 5px;
+    background-color: #5CB85C;
+    color: #fff;
+}
+
+.result_panel form ul li.button input[type="submit"]:hover {
+    background-color: #2d9e2d;
+}
+
+.result_panel form ul li.button input[type="reset"] {
+    width: 100px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.result_panel form ul li.button input[type="reset"]:hover {
+    background-color: #e2e2e2;
+}
